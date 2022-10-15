@@ -24,10 +24,10 @@
       <div class="weather-app-wrapper">
         <div class="weather-app">
           <div class="overview">
-            <h1>Abuja</h1>
+            <h1 id="city"></h1>
             <ul>
               <li>Friday 10:57</li>
-              <li>clear</li>
+              <li id="description"></li>
             </ul>
           </div>
           <div class="row">
@@ -39,7 +39,7 @@
                   id="icon"
                 />
                 <div>
-                  <strong id="temperature">27</strong
+                  <strong id="temperature"></strong
                   ><span class="units">°C | <a href="#"></a>°F</span>
                 </div>
               </div>
@@ -47,8 +47,8 @@
             <div class="col-6">
               <ul>
                 <li>Precipitation: 0%</li>
-                <li>Humidity: 75%</li>
-                <li>Wind: 2 km/h</li>
+                <li>Humidity: <span id="humidity"></span></li>
+                <li>Wind: <span id="wind"></span>km/h</li>
               </ul>
             </div>
           </div>
