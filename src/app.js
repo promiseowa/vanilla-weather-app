@@ -8,6 +8,7 @@ function formatDate(timestamp) {
   if (minutes < 10) {
     minutes = `0${minutes}`;
   }
+
   let days = [
     "Sunday",
     "Monday",
@@ -17,6 +18,7 @@ function formatDate(timestamp) {
     "Friday",
     "Saturday",
   ];
+
   let day = days[date.getDay()];
   return `${day} ${hours}:${minutes}`;
 }
@@ -42,7 +44,7 @@ function displayTemperature(response) {
 }
 
 function search(city) {
-  let apiKey = "e0a5a97de9a0b7a951e9d154a8f9bad8";
+  let apiKey = "5f472b7acba333cd8a035ea85a0d4d4c";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayTemperature);
 }
@@ -53,7 +55,7 @@ function handleSubmit(event) {
   search(cityInputElement.value);
 }
 
-search("Lagos");
-
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
+
+search("New York");
