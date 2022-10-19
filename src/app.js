@@ -54,7 +54,7 @@ function search(city) {
 
 function handleSubmit(event) {
   event.preventDefault();
-  let cityInputElement = document.querySelector("#city-input");
+  let cityInputElement = document.querySelector("#form-search");
   search(cityInputElement.value);
 }
 
@@ -86,4 +86,4 @@ fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
-search("New York");
+search("Abuja");
