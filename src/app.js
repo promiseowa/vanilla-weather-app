@@ -43,11 +43,10 @@ function displayForecast(response) {
         forecastHTML +
         `
           
-              <div class="col-2">
-                <div class="weather-forecast-date">${formatDay(
-                  forecastDay.temperature.day
-                )}</div>
-
+            <div class="col-2">
+              <div class="weather-forecast-date">${formatDay(
+                forecastDay.temperature.day
+              )}</div>
                 <img
                   src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${
                     forecastDay.condition.icon
@@ -63,8 +62,8 @@ function displayForecast(response) {
                     forecastDay.temperature.minimum
                   )}°</span>
                 </div>
-              </div>
-          `;
+            </div>
+        `;
     }
   });
 
@@ -74,7 +73,8 @@ function displayForecast(response) {
 
 function getForecast(coordinates) {
   let apiKey = "9527o5dtc0fb03cffb4e05fc05aaa326";
-  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?lon=${coordinates.longitude}&lat=${coordinates.latitude}&key=${apiKey}&units=metric`;
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?lon=${coordinates.longitude}&lat=${coordinates.latitude}&cnt=7&key=${apiKey}&units=metric`;
+
   axios.get(apiUrl).then(displayForecast);
 }
 
