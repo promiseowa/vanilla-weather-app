@@ -22,6 +22,12 @@
   </head>
   <body>
     <div class="container">
+      <div class="card bg-dark text-white" style="max-width: 100%;">
+            <img src="src/media/cool.jpg" class="card-img" alt="cool" />
+            <div
+              class="card-img-overlay"
+              style="background-color: rgba(0, 0, 0, 0.3)"
+            >
       <div class="weather-app-wrapper">
         <div class="weather-app">
           <form id="search-form" class="mb-3">
@@ -61,10 +67,7 @@
                 />
                 <div>
                   <strong id="temperature"></strong
-                  ><span class="units"
-                    ><a href="#" id="celsius-link" class="active">°C</a> |
-                    <a href="#" id="fahrenheit-link" class="link">°F</a></span
-                  >
+                  ><span class="units"> °C</span>
                 </div>
               </div>
             </div>
@@ -78,7 +81,7 @@
           <div class="weather-forecast" id="forecast"></div>
         </div>
         <small>
-          <a href="https://github.com/promiseowa/vanilla-weather-app"
+          <a href="https://github.com/promiseowa/vanilla-weather-app" target="_blank"
             >Open-source code</a
           >
           by Promise Owa
