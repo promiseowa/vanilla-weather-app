@@ -3,8 +3,8 @@ body {
 }
 
 h1 {
-  color: blueviolet;
-  font-size: 24px;
+  color: rgb(2, 40, 41);
+  font-size: 34px;
   font-weight: 100;
   line-height: 28.8px;
   margin-bottom: 0;
@@ -55,7 +55,7 @@ li {
 }
 
 .weather-temperature .active {
-  color: black;
+  color: cadetblue;
   text-decoration: none;
   cursor: default;
 }
@@ -66,6 +66,7 @@ li {
 .weather-temperature .link {
   text-decoration: none;
   cursor: default;
+  color: cadetblue;
 }
 
 .weather-forecast {
