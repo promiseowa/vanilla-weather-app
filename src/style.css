@@ -9,7 +9,7 @@ body {
 }
 
 h1 {
-  color: rgb(1, 17, 17);
+  color: #011111;
   font-size: 34px;
   font-weight: 100;
   line-height: 28.8px;
@@ -31,7 +31,6 @@ li {
   line-height: 19px;
 }
 .weather-app-wrapper {
-  max-width: 600px;
   margin: 30px auto;
 }
 .weather-app {
@@ -55,9 +54,8 @@ li {
 }
 
 .weather-temperature .units {
-  position: relative;
+  position: fixed;
   font-size: 16px;
-  top: -34px;
 }
 
 .weather-temperature .active {
@@ -73,6 +71,12 @@ li {
   text-decoration: none;
   cursor: default;
   color: cadetblue;
+}
+
+.pressure {
+  position: relative;
+  top: 40px;
+  left: 40px;
 }
 
 .weather-forecast {
