@@ -3,6 +3,11 @@ body {
   margin: 0 auto;
 }
 
+.container {
+  display: flex;
+  justify-content: center;
+}
+
 h1 {
   color: rgb(1, 17, 17);
   font-size: 34px;
